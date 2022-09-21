@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+:root{
+    --primary: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+    --headerFont: 'Lobster', cursive;
+    --bodyFont: 'Noto Serif', serif;
+    --textShadow: 3px 2px 3px rgba(0, 0, 0, 0.45);
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--bodyFont); 
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.6)), url(./img/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+h1,h2{
+    font-family: var(--headerFont);
+    text-shadow: var(--textShadow);
+    font-size: 2.9rem;
+    
+}
+
+
+
+
+
+span{
+    text-shadow: var(--textShadow);
+    
+
+}
+
+.icon{
+    width: 150px;
+    border-radius: 30%;
+}
+
+.location,
+.temperature {
+    height: 30vh;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature {
+    flex-direction: column;
+    
+}
+
+.degree-section{
+    display: flex;
+}
+
+.temp-description{
+    border: 3px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: var(--textShadow);
+}
+
